@@ -1,0 +1,5 @@
+open terminal run command "docker run --rm --gpus all -it -v /home/kronos/Desktop/:/workspace/pl/ --name nlp_test --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -p 8888:8888 -p 6006:6006 nvcr.io/nvidia/pytorch:23.02-py3
+"
+wait for 5 secs, then run "sh pl/jupyter.sh"
+wait for it to execute then open browser link localhost:8888
+
